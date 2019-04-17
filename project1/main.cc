@@ -22,7 +22,7 @@ int main(int argc, char* argv[]){
 
 	//empty check
 	if(priQueue.empty()){
-		cout << "[!] Priority Queue is empty - initalized" << endl;
+		cout << "[!] Priority Queue is empty - initialized" << endl;
 	}
 
 	// push
