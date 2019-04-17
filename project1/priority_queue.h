@@ -12,7 +12,7 @@ class templatePriorityQueue {
     ~templatePriorityQueue();
     bool empty() const;
     const T& top() const;
-    int size();
+    int size() const;
     void push(const T&);
     void pop();	
 };
