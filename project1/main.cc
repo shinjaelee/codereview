@@ -1,6 +1,6 @@
+#include "priority_queue.h"
 #include <iostream>
 #include <cstdlib>
-#include "priority_queue.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ void pushQueue(templatePriorityQueue<T>* Que, int data) {
   Que->push(data);
 }
 
-template<typename T>
+template <typename T>
 void popQueue(templatePriorityQueue<T>* Que) {
   cout << "[+] Integer "<< Que->top() << " will be poped from the Priority Queue." << endl;
   Que->pop();
@@ -30,13 +30,13 @@ int main(int argc, char* argv[]) {
   pushQueue(&priQueue,598);
   pushQueue(&priQueue,302);
 
-  if( argc > 1 ) {
+  if (argc > 1) {
     customNumber = atoi(argv[1]);
     if (customNumber > -500 && customNumber < 2000) {
-	    pushQueue(&priQueue,customNumber);
+      pushQueue(&priQueue,customNumber);
     } else {
       pushQueue(&priQueue,-1);
-	  }
+    }
   } else {
     pushQueue(&priQueue,-1);
   }
@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
     cout << "[-] Priority Queue is empty. - Push method did not work!" << endl;
     return -1;
   } else {
-    cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() <<endl;
+    cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() << endl;
   }
 
   // pop twice
