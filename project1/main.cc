@@ -20,12 +20,10 @@ int main(int argc, char* argv[]) {
   templatePriorityQueue<int> priQueue;
   int customNumber = 0;
 
-  //empty check
   if (priQueue.empty()) {
     cout << "[!] Priority Queue is empty - initialized" << endl;
   }
 
-  // push
   pushQueue(&priQueue,23);
   pushQueue(&priQueue,598);
   pushQueue(&priQueue,302);
@@ -41,7 +39,6 @@ int main(int argc, char* argv[]) {
     pushQueue(&priQueue, -1);
   }
 
-  //empty & size
   if (priQueue.empty()) {
     cout << "[-] Priority Queue is empty. - popQueue method did not work!" << endl;
     return -1;
@@ -49,7 +46,6 @@ int main(int argc, char* argv[]) {
     cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() << endl;
   }
 
-  // pop twice
   popQueue(&priQueue);
   popQueue(&priQueue);
 
